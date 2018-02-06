@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4ADDA9A-9D94-49E4-85F0-61AC5E5DEED6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Organizer.My.MyApplication</StartupObject>
+    <RootNamespace>Organizer</RootNamespace>
+    <AssemblyName>Organizer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Organizer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Organizer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Class2.vb" />
+    <Compile Include="FormPrincipale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipale.Designer.vb">
+      <DependentUpon>FormPrincipale.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditerAgenda.Designer.vb">
+      <DependentUpon>FormEditerAgenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditerAgenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettings.Designer.vb">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFichier.Designer.vb">
+      <DependentUpon>FormFichier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormFichier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormPrincipale.resx">
+      <DependentUpon>FormPrincipale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditerAgenda.resx">
+      <DependentUpon>FormEditerAgenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFichier.resx">
+      <DependentUpon>FormFichier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1425705403_71014.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1426271414_699044-icon-55-document-text-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parametre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\200d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\200n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\201d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\201n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\202d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\202n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\210d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\210n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\211d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\211n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\212d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\212n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\221d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\221n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\230d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\230n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\231d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\231n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\232d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\232n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\300d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\300n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\301d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\301n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\302d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\302n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\310d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\310n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\311d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\311n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\312d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\312n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\321d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\321n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\500d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\500n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\501d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\501n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\502d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\502n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\503d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\503n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\504d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\504n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\511d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\511n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\520d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\520n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\521d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\521n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\522d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\522n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\600d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\600n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\601d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\601n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\602d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\602n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\611d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\611n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\621d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\621n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\701d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\701n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\711d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\711n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\721d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\721n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\731d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\731n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\741d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\741n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\800d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\800n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\801d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\801n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\802d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\802n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\803d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\803n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\804d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\804n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\900d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\900n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\901d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\901n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\902d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\902n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\903d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\903n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\904d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\904n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\905d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\905n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\906d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\WeatherIcons\906n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chancetstorms.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flurries.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hazy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostlycloudy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostlysunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chanceflurries.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancerain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancesleet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancesnow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancetstorms.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_clear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_cloudy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_flurries.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_fog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_hazy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_mostlycloudy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_mostlysunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_partlycloudy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_partlysunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_rain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_sleet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_snow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_sunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_tstorms.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partlycloudy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partlysunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sleet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tstorms.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chanceflurries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chancerain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chancesleet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chancesnow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chancetstorms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flurries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hazy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostlycloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostlysunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chanceflurries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancerain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancesleet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancesnow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_chancetstorms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_flurries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_fog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_hazy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_mostlycloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_mostlysunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_partlycloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_partlysunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_sleet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt_tstorms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partlycloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partlysunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sleet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tstorms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

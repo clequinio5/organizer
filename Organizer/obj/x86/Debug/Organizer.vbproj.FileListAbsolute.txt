@@ -1,0 +1,12 @@
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\bin\Debug\Organizer.exe
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\bin\Debug\Organizer.pdb
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\bin\Debug\Organizer.xml
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\obj\x86\Debug\Organizer.Form1.resources
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\obj\x86\Debug\Organizer.Resources.resources
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\obj\x86\Debug\Organizer.vbproj.GenerateResource.Cache
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\obj\x86\Debug\Organizer.exe
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\obj\x86\Debug\Organizer.xml
+C:\Users\Kiki\AppData\Local\Temporary Projects\Organizer\obj\x86\Debug\Organizer.pdb
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Debug\Organizer.exe
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Debug\Organizer.xml
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Debug\Organizer.pdb

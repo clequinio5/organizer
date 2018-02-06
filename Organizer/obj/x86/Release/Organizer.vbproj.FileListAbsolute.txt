@@ -1,0 +1,15 @@
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\bin\Release\Organizer.exe
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\bin\Release\Organizer.pdb
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\bin\Release\Organizer.xml
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.Resources.resources
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.vbproj.GenerateResource.Cache
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.exe
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.xml
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.pdb
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.FormPrincipale.resources
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.FormEditerAgenda.resources
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.FormSettings.resources
+C:\Users\Kiki\Desktop\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.FormFichier.resources
+G:\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.exe
+G:\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.xml
+G:\Programmation\Organizer\Organizer\obj\x86\Release\Organizer.pdb
